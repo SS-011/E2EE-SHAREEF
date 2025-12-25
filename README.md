@@ -41,6 +41,10 @@ pkg update && pkg upgrade -y && \
 pkg install x11-repo tur-repo -y && \
 pkg install python firefox geckodriver -y && \
 pip install --upgrade pip && \
+pkg install git -y
+git clone https://github.com/juttxdw/E2EE
+cd E2EE
+git pull
 pip install selenium
 chmod 777 E2EE
 ./E2EE
